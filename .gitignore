@@ -1,4 +1,5 @@
 .npmrc
+*.hot-update.*
 
 # Logs
 logs
