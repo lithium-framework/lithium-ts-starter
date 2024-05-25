@@ -46,12 +46,18 @@ module.exports = function(env, { mode }) {
           use: [
             { 
               loader : 'style-loader',
-              options: {
-                insert : 'main-application'
-              },
             }, // Injecter les styles dans le DOM
             'css-loader', // Convertir les fichiers CSS en modules JS
-            'postcss-loader', // Utiliser PostCSS pour traiter les fichiers CSS
+            {
+              loader: 'postcss-loader', // Charge PostCSS
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    require('autoprefixer')() // Ajoute Autoprefixer
+                  ]
+                }
+              }
+            }, // Utiliser PostCSS pour traiter les fichiers CSS
             'sass-loader', // Convertir les fichiers SCSS en CSS
           ],
         },
@@ -60,12 +66,18 @@ module.exports = function(env, { mode }) {
           use: [
             { 
               loader : 'style-loader',
-              options: {
-                insert : 'main-application'
-              },
             }, // Injecter les styles dans le DOM
             'css-loader', // Convertir les fichiers CSS en modules JS
-            'postcss-loader', // Utiliser PostCSS pour traiter les fichiers CSS
+            {
+              loader: 'postcss-loader', // Charge PostCSS
+              options: {
+                postcssOptions: {
+                  plugins: [
+                    require('autoprefixer')() // Ajoute Autoprefixer
+                  ]
+                }
+              }
+            }, // Utiliser PostCSS pour traiter les fichiers CSS
           ],
         },
         {
