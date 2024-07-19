@@ -1,10 +1,10 @@
-import { html } from '@lithium-framework/core/flyComponent';
+import { html } from '@lithium-framework/core';
 
-export function NavigatorInformations(){
+export const NavigatorInformations = html`${() => {
 
   return html`<div>
     <h3>running on</h3>
     <p>${navigator.userAgent}</p>
   </div>`
 
-}
+}}`
