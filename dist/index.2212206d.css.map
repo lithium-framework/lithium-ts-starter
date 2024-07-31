@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/index.scss"],"sourcesContent":["main-application{\n  display: grid;\n  position: absolute;\n  height: stretch;\n  width: stretch;\n  align-items: center;\n  text-align: center;\n  padding: 20px;\n  font-size: 14px;\n}"],"names":[],"version":3,"file":"index.2212206d.css.map","sourceRoot":"/__parcel_source_root/"}

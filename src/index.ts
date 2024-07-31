@@ -3,7 +3,4 @@ import { HelloWorld } from './components/hello-world';
 
 import "./index.scss";
 
-render( html`<div>
-  coucou
-  ${HelloWorld}
-</div>` , document.body )
+render( html`<main-application>${HelloWorld}</main-application>` ,document.body )

@@ -1,11 +1,11 @@
-import { render , html } from '@lithium-framework/core';
+import { render , html , css } from '@lithium-framework/core';
 import { NavigatorInformations } from '../navigator-informations';
 
-export const HelloWorld = html`${() => {
+export function HelloWorld(){
 
   return html`<div>
     <h1>Hello World !</h1>
-    ${NavigatorInformations}
+    ${NavigatorInformations()}
   </div>`;
 
-}}`
+}
