@@ -4,8 +4,8 @@
   "source": "src/index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clear:dist": "rm -r dist",
-    "clear:cache": "rm -r .parcel-cache",
+    "clear:dist": "rm -rf dist",
+    "clear:cache": "rm -rf .parcel-cache",
     "clear": "npm run clear:dist & npm run clear:cache",
     "start": "npm run clear && parcel --port 8080 --log-level verbose",
     "build": "npm run clear && parcel build --log-level verbose"
@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@lithium-framework/core": "^1.6.0",
+    "@lithium-framework/core": "file:../../core",
     "@microsoft/fast-element": "^2.0.0-beta.26"
   },
   "devDependencies": {
