@@ -14,7 +14,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@lithium-framework/core": "file:../../core",
+    "@lithium-framework/core": "^1.6.0",
     "@microsoft/fast-element": "^2.0.0-beta.26"
   },
   "devDependencies": {
